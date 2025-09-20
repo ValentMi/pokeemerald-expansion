@@ -166,3 +166,17 @@ Common_Movement_WalkRightFaster::
 Common_Movement_WalkLeftFaster::
     walk_faster_left
     step_end
+	
+Common_Movement_LadderUp::
+	face_up
+	walk_up
+	walk_up
+	step_end
+	
+Common_Movement_LadderDown::
+	face_up
+	lock_facing_direction
+	walk_down
+	walk_down
+	unlock_facing_direction
+	step_end

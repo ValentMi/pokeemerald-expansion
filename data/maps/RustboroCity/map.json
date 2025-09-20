@@ -243,6 +243,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RustboroCity_EventScript_Boy1",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 26,
+      "y": 25,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_11"
     }
   ],
   "warp_events": [
@@ -297,7 +310,7 @@
     },
     {
       "x": 33,
-      "y": 19,
+      "y": 17,
       "elevation": 0,
       "dest_map": "MAP_RUSTBORO_CITY_HOUSE1",
       "dest_warp_id": "0"
@@ -352,7 +365,7 @@
     },
     {
       "type": "trigger",
-      "x": 23,
+      "x": 24,
       "y": 22,
       "elevation": 3,
       "var": "VAR_RUSTBORO_CITY_STATE",
@@ -361,7 +374,7 @@
     },
     {
       "type": "trigger",
-      "x": 23,
+      "x": 25,
       "y": 23,
       "elevation": 3,
       "var": "VAR_RUSTBORO_CITY_STATE",
@@ -370,7 +383,7 @@
     },
     {
       "type": "trigger",
-      "x": 23,
+      "x": 26,
       "y": 24,
       "elevation": 3,
       "var": "VAR_RUSTBORO_CITY_STATE",

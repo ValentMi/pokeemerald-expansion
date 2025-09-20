@@ -271,6 +271,7 @@ BattleFrontier_BattlePalaceBattleRoom_EventScript_DefeatedSpenserGold::
 
 BattleFrontier_BattlePalaceBattleRoom_EventScript_DoPalaceBattle::
 	closemessage
+	setflag B_FLAG_INVERSE_BATTLE
 	setvar VAR_TEMP_2, 0
 	frontier_set FRONTIER_DATA_RECORD_DISABLED, FALSE
 	special HealPlayerParty
@@ -281,6 +282,7 @@ BattleFrontier_BattlePalaceBattleRoom_EventScript_DoPalaceBattle::
 	frontier_restorehelditems
 	special HealPlayerParty
 	frontier_resetsketch
+	clearflag B_FLAG_INVERSE_BATTLE
 	return
 
 BattleFrontier_BattlePalaceBattleRoom_OnWarp:

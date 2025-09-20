@@ -1122,7 +1122,7 @@ static void Task_DexNavSearch(u8 taskId)
     }
 
     if (sDexNavSearchDataPtr->hiddenSearch && !task->tRevealed &&
-        (JOY_NEW(R_BUTTON) || (sDexNavSearchDataPtr->proximity < CREEPING_PROXIMITY)))
+        ((JOY_NEW(R_BUTTON) && JOY_NEW(A_BUTTON)) || (sDexNavSearchDataPtr->proximity < CREEPING_PROXIMITY)))
     {
         PlaySE(SE_DEX_SEARCH);
         ClearStdWindowAndFrameToTransparent(sDexNavSearchDataPtr->windowId, FALSE);

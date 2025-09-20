@@ -54,6 +54,10 @@ RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 	waitfanfare
 	setflag FLAG_SYS_POKENAV_GET
 	setflag FLAG_RECEIVED_POKENAV
+	setflag DN_FLAG_DEXNAV_GET
+	setflag B_FLAG_DYNAMAX_BATTLE
+	setflag B_FLAG_TERA_ORB_CHARGED
+	setflag B_FLAG_TERA_ORB_NO_COST
 	setflag FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT
 	msgbox RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp, MSGBOX_DEFAULT
 	closemessage

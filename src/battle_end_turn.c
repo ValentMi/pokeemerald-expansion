@@ -231,6 +231,10 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
         if (ability != ABILITY_SAND_VEIL
          && ability != ABILITY_SAND_FORCE
          && ability != ABILITY_SAND_RUSH
+		 && ability != ABILITY_SHIELD_DUST
+		 && ability != ABILITY_FORECAST
+		 && ability != ABILITY_SHELL_ARMOR
+		 && ability != ABILITY_BATTLE_ARMOR
          && ability != ABILITY_OVERCOAT
          && !IS_BATTLER_ANY_TYPE(battler, TYPE_ROCK, TYPE_GROUND, TYPE_STEEL)
          && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERGROUND

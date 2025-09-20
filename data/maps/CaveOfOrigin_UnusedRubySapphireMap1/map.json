@@ -16,18 +16,18 @@
   "object_events": [],
   "warp_events": [
     {
-      "x": 13,
-      "y": 5,
+      "x": 2,
+      "y": 12,
       "elevation": 3,
-      "dest_map": "MAP_CAVE_OF_ORIGIN_1F",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_RUSTURF_TUNNEL",
+      "dest_warp_id": "4"
     },
     {
-      "x": 5,
-      "y": 11,
+      "x": 3,
+      "y": 24,
       "elevation": 3,
-      "dest_map": "MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP2",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_RUSTURF_TUNNEL",
+      "dest_warp_id": "3"
     }
   ],
   "coord_events": [],

@@ -317,7 +317,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_WATER_VEIL] =
     {
         .name = _("Water Veil"),
-        .description = COMPOUND_STRING("Prevents burns."),
+        .description = COMPOUND_STRING("Halves damage at full HP."),
         .aiRating = 4,
         .breakable = TRUE,
     },
@@ -488,7 +488,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_LIQUID_OOZE] =
     {
         .name = _("Liquid Ooze"),
-        .description = COMPOUND_STRING("Draining causes injury."),
+        .description = COMPOUND_STRING("Harms foes when drained."),
         .aiRating = 3,
     },
 

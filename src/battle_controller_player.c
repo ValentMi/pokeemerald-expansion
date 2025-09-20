@@ -2064,13 +2064,6 @@ static void PlayerChooseMoveInBattlePalace(u32 battler)
 
 void PlayerHandleChooseMove(u32 battler)
 {
-    if (gBattleTypeFlags & BATTLE_TYPE_PALACE)
-    {
-        gBattleStruct->arenaMindPoints[battler] = 8;
-        gBattlerControllerFuncs[battler] = PlayerChooseMoveInBattlePalace;
-    }
-    else
-    {
         struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[battler][4]);
 
         InitMoveSelectionsVarsAndStrings(battler);
@@ -2086,7 +2079,6 @@ void PlayerHandleChooseMove(u32 battler)
             CreateGimmickTriggerSprite(battler);
 
         gBattlerControllerFuncs[battler] = HandleChooseMoveAfterDma3;
-    }
 }
 
 void InitMoveSelectionsVarsAndStrings(u32 battler)

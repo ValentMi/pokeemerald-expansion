@@ -552,7 +552,7 @@
     },
     {
       "x": 5,
-      "y": 19,
+      "y": 18,
       "elevation": 0,
       "dest_map": "MAP_SLATEPORT_CITY_NAME_RATERS_HOUSE",
       "dest_warp_id": "0"
@@ -601,7 +601,7 @@
     {
       "type": "sign",
       "x": 8,
-      "y": 19,
+      "y": 18,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "SlateportCity_EventScript_NameRatersHouseSign"
