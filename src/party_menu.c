@@ -2826,7 +2826,7 @@ static void SetPartyMonSelectionActions(struct Pokemon *mons, u8 slotId, u8 acti
 
 static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
 {
-	u8 i, j;
+    u8 i, j;
 
     sPartyMenuInternal->numActions = 0;
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUMMARY);
@@ -2838,24 +2838,11 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
         {
             if (GetMonData(&mons[slotId], i + MON_DATA_MOVE1) == FieldMove_GetMoveId(j))
             {
-                // AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, j + MENU_FIELD_MOVES);
-                // break;
-            // }
-        // }
-    // }
-	
-                if (!(MonKnowsMove(&gPlayerParty[i], MOVE_FLY))) // If Mon already knows FLY, prevent it from being added to action list
-                if (!(MonKnowsMove(&gPlayerParty[i], MOVE_FLASH))) // If Mon already knows FLASH, prevent it from being added to action list
-                    AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, j + MENU_FIELD_MOVES);
-                        break;
+                AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, j + MENU_FIELD_MOVES);
+                break;
             }
         }
     }
-
-    if (sPartyMenuInternal->numActions < 5 && CanTeachMove(&mons[slotId], ITEM_HM_FLY - ITEM_TM_FOCUS_PUNCH)) // If Mon can learn HM02 and action list consists of < 4 moves, add FLY to action list
-        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 5 + MENU_FIELD_MOVES);
-    if (sPartyMenuInternal->numActions < 5 && CanTeachMove(&mons[slotId], ITEM_HM_FLASH - ITEM_TM_FOCUS_PUNCH)) // If Mon can learn HM05 and action list consists of < 4 moves, add FLASH to action list
-        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 1 + MENU_FIELD_MOVES);
 
     if (!InBattlePike())
     {

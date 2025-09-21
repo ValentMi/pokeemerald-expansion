@@ -1920,7 +1920,7 @@ static void Cmd_adjustdamage(void)
         {
             enduredHit |= 1u << battlerDef;
         }
-        else if (gDisableStructs[battlerDef].endured)
+        else if (gDisableStructs[battlerDef].endured && (gBattleMons[gBattlerTarget].hp > 1))
         {
             enduredHit |= 1u << battlerDef;
             gBattleStruct->moveResultFlags[battlerDef] |= MOVE_RESULT_FOE_ENDURED;
@@ -7674,7 +7674,7 @@ void TryHazardsOnSwitchIn(u32 battler, u32 side, enum Hazards hazardType)
     case HAZARDS_NONE:
         break;
     case HAZARDS_SPIKES:
-        if (GetBattlerAbility(battler) != ABILITY_MAGIC_GUARD
+        if ((GetBattlerAbility(battler) != ABILITY_MAGIC_GUARD) && (GetBattlerAbility(battler) != ABILITY_SNOW_CLOAK) && (GetBattlerAbility(battler) != ABILITY_SAND_VEIL)
          && IsBattlerAffectedByHazards(battler, FALSE)
          && IsBattlerGrounded(battler))
         {
@@ -7726,7 +7726,7 @@ void TryHazardsOnSwitchIn(u32 battler, u32 side, enum Hazards hazardType)
         }
         break;
     case HAZARDS_STEALTH_ROCK:
-        if (IsBattlerAffectedByHazards(battler, FALSE) && GetBattlerAbility(battler) != ABILITY_MAGIC_GUARD)
+        if (IsBattlerAffectedByHazards(battler, FALSE) && GetBattlerAbility(battler) != ABILITY_MAGIC_GUARD && GetBattlerAbility(battler) != ABILITY_SNOW_CLOAK && GetBattlerAbility(battler) != ABILITY_SAND_VEIL)
         {
             gBattleStruct->moveDamage[battler] = GetStealthHazardDamage(TYPE_SIDE_HAZARD_POINTED_STONES, battler);
             if (gBattleStruct->moveDamage[battler] != 0)
@@ -7734,7 +7734,7 @@ void TryHazardsOnSwitchIn(u32 battler, u32 side, enum Hazards hazardType)
         }
         break;
     case HAZARDS_STEELSURGE:
-        if (IsBattlerAffectedByHazards(battler, FALSE) && GetBattlerAbility(battler) != ABILITY_MAGIC_GUARD)
+        if (IsBattlerAffectedByHazards(battler, FALSE) && GetBattlerAbility(battler) != ABILITY_MAGIC_GUARD && GetBattlerAbility(battler) != ABILITY_SNOW_CLOAK && GetBattlerAbility(battler) != ABILITY_SAND_VEIL)
         {
             gBattleStruct->moveDamage[battler] = GetStealthHazardDamage(TYPE_SIDE_HAZARD_SHARP_STEEL, battler);
             if (gBattleStruct->moveDamage[battler] != 0)

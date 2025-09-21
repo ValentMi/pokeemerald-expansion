@@ -18,7 +18,7 @@
       "local_id": "LOCALID_RIVALS_HOUSE_2F_RIVAL",
       "graphics_id": "OBJ_EVENT_GFX_RIVAL_MAY_NORMAL",
       "x": 1,
-      "y": 1,
+      "y": 2,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -188,7 +188,7 @@
       "local_id": "LOCALID_PLAYERS_HOUSE_2F_MOM",
       "graphics_id": "OBJ_EVENT_GFX_MOM",
       "x": 1,
-      "y": 1,
+      "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -228,7 +228,7 @@
   "warp_events": [
     {
       "x": 1,
-      "y": 1,
+      "y": 2,
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F",
       "dest_warp_id": "2"

@@ -33,6 +33,7 @@
 #include "constants/moves.h"
 #include "constants/songs.h"
 #include "constants/trainer_types.h"
+#include "pokemon.h"
 
 #define NUM_FORCED_MOVEMENTS 18
 #define NUM_ACRO_BIKE_COLLISIONS 5
@@ -1543,8 +1544,9 @@ bool8 PartyHasMonWithSurf(void)
         {
             if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) == SPECIES_NONE)
                 break;
-            if (MonKnowsMove(&gPlayerParty[i], MOVE_SURF))
-                return TRUE;
+
+			//if (CanMonLearnTMHM(&gPlayerParty[i], ITEM_HM_SURF - ITEM_TM01_FOCUS_PUNCH))
+				return TRUE;
         }
     }
     return FALSE;

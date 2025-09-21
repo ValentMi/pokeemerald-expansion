@@ -75,7 +75,7 @@ PetalburgCity_EventScript_WalkToWallyHouse::
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	fadedefaultbgm
 	clearflag FLAG_DONT_TRANSITION_MUSIC
-	warp MAP_PETALBURG_CITY_WALLYS_HOUSE, 2, 4
+	warp MAP_PETALBURG_CITY_WALLYS_HOUSE, 5, 5
 	waitstate
 	releaseall
 	end
