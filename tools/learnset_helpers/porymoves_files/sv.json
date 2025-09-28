@@ -13307,7 +13307,14 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_PETAL_BLIZZARD",
-      "MOVE_CURSE"
+      "MOVE_CURSE",
+      "MOVE_PSYCH_UP",
+      "MOVE_FUTURE_SIGHT",
+      "MOVE_EXPANDING_FORCE",
+      "MOVE_CALM_MIND",
+      "MOVE_ALLURING_VOICE",
+	  "MOVE_DAZZLING_GLEAM",
+	  "MOVE_MOONBLAST"
     ],
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
@@ -13502,6 +13509,8 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_TAKE_DOWN",
+      "MOVE_POWER_GEM",
+      "MOVE_EARTH_POWER",
       "MOVE_PROTECT",
       "MOVE_FIRE_FANG",
       "MOVE_FIRE_SPIN",
@@ -20235,6 +20244,8 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_TAKE_DOWN",
+	  "MOVE_ENERGY_BALL",
+	  "MOVE_GIGA_DRAIN",
       "MOVE_MUD_SLAP",
       "MOVE_PROTECT",
       "MOVE_FIRE_SPIN",
@@ -24054,6 +24065,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_TAKE_DOWN",
+	  "MOVE_ROOST",
       "MOVE_AGILITY",
       "MOVE_MUD_SLAP",
       "MOVE_PROTECT",
@@ -32858,7 +32870,13 @@
       "MOVE_SCALE_SHOT",
       "MOVE_PSYCH_UP",
       "MOVE_ENDEAVOR",
-      "MOVE_WHIRLPOOL"
+      "MOVE_WHIRLPOOL",
+      "MOVE_FUTURE_SIGHT",
+      "MOVE_EXPANDING_FORCE",
+      "MOVE_CALM_MIND",
+      "MOVE_ALLURING_VOICE",
+	  "MOVE_DAZZLING_GLEAM",
+	  "MOVE_MOONBLAST"
     ],
     "EggMoves": [
       "MOVE_SUPERSONIC",
